@@ -2,7 +2,6 @@
 
 <div align="center">
   <img src="https://media.tenor.com/v2es7QGjFfoAAAAi/raul-senes-gamer.gif" height="200" />
-  <img src="https://media.tenor.com/K1ps3qaF1psAAAAi/kirby-nintendo.gif" height="200" />
 </div>
 
 A comprehensive, aesthetically pleasing personal portfolio website built for **Paarshvi Vijoy**, an ITM SkillTech University student (2025-2029).
@@ -33,3 +32,6 @@ The site serves to showcase Paarshvi's deep interest and skills across VFX, anim
    git clone https://github.com/paarshviv12/PORTFOLIO-practice.git
    ```
 2. Open `portfolioweb.html` in your web browser.
+<div align="center">
+  <img src="https://media.tenor.com/K1ps3qaF1psAAAAi/kirby-nintendo.gif" height="200" />
+</div>
