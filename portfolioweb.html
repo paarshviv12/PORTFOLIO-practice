@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+
+      background-image: url("https://media1.tenor.com/m/UcZ-W_KJ_mkAAAAC/starry-night.gif");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .banner {
+      position: relative;
+      height: 260px;
+      background-image: url("linkedin-banner.jpeg");
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .banner-text {
+      position: relative;
+      font-family: 'Great Vibes', cursive;
+      font-size: 72px;
+      font-weight: normal;
+      color: white;
+      letter-spacing: 2px;
+      text-shadow: 0 0 20px rgba(255, 208, 0, 0.8);
+    }
+
+    h1 {
+      font-style: italic;
+      color: rgb(255, 208, 0);
+      margin-top: 20px;
+    }
+
+    .pfp-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin: 40px 0;
+    }
+
+    .linkedin-link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .pfp {
+      width: 140px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .linkedin-link:hover .pfp {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(0, 119, 181, 0.8);
+    }
+
+    .linkedin-text {
+      margin-top: 6px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .linkedin-link:hover .linkedin-text {
+      color: rgb(0, 119, 181);
+    }
+
+    .hamster {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hamster img {
+      width: 80px;
+    }
+
+    .speech {
+      background: white;
+      color: black;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .speech::before {
+      content: "";
+      position: absolute;
+      left: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent white transparent transparent;
+    }
+
+    .about-title {
+      background-color: rgb(255, 170, 0);
+      color: black;
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 12px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      background-color: yellow;
+      color: black;
+      padding: 25px;
+      max-width: 600px;
+      width: 90%;
+      margin: 0 auto 40px;
+      border-radius: 16px;
+      line-height: 1.6;
+    }
+
+    .github-link {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+
+    .github-text {
+      margin-top: 6px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .github-gif {
+      width: 100px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .github-link:hover .github-gif {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 10px #ffffff);
+    }
+
+    .github-link:hover .github-text {
+      color: rgb(255, 208, 0);
+    }
+
+    .education-title {
+      background-color: rgb(255, 170, 0);
+      color: black;
+      display: block;
+      padding: 12px 30px;
+      border-radius: 12px;
+      font-weight: bold;
+      margin: 40px auto 20px;
+    }
+
+    .education-table {
+      margin: 0 auto 50px;
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.95);
+      color: black;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .education-table th,
+    .education-table td {
+      padding: 14px 16px;
+      text-align: center;
+
+    }
+
+    .education-table th {
+      background-color: rgb(255, 208, 0);
+      font-weight: bold;
+    }
+
+    .education-table tr:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+
+    .education-table tr:hover {
+      background-color: #ffe680;
+    }
+
+    .edu-link {
+      color: #0056b3;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .edu-link:hover {
+      text-decoration: underline;
+    }
+
+    .mario-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      margin: 60px 0 40px;
+    }
+
+
+    .mario-gif {
+      width: 90px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+
+    .mario-link:hover .mario-gif {
+      transform: translateY(-6px) scale(1.1);
+    }
+
+
+    .mario-text {
+      margin-top: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: rgb(255, 208, 0);
+      animation: pulse 1.6s infinite;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="banner-text">My Portfolio</div>
+  </div>
+
+  <h1>Welcome to my Portfolio</h1>
+
+  <div class="pfp-row">
+
+    <a href="https://www.linkedin.com/in/paarshvi-vijoy-934439399/" target="_blank" class="linkedin-link">
+      <img
+        src="https://media.licdn.com/dms/image/v2/D4E03AQHGRp0hqDjSCg/profile-displayphoto-crop_800_800/B4EZr9HQemHcAQ-/0/1765183130094?e=1773273600&v=beta&t=mgffM7WZwvrNjTEncygk72cLjIkLAq2xuHNciamZh-4"
+        alt="My LinkedIn Profile" class="pfp">
+      <div class="linkedin-text">LinkedIn</div>
+    </a>
+
+    <div class="hamster">
+      <img src="https://media.tenor.com/YrR48WQtTQEAAAAi/hamchat-collection.gif">
+      <div class="speech">Hiii!!~~</div>
+    </div>
+
+  </div>
+
+  <div class="about-title">ABOUT ME</div>
+
+  <div class="about-text">
+    I am a curious and driven individual with a strong inclination toward
+    creativity, technology, and problem-solving. I enjoy exploring fields
+    like VFX, animation, design, and engineering, where imagination meets
+    logic. Having experience across sports, art, and storytelling, I value
+    discipline as much as self-expression. I constantly strive to improve
+    myself, learn new skills, and push beyond my comfort zone to become the
+    best version of who I can be.
+  </div>
+
+  <a href="https://github.com/paarshviv12" target="_blank" class="github-link">
+    <img src="https://media.tenor.com/-VqQIA-3LvsAAAAj/gatos-memes-gato-meme.gif" alt="GitHub Cat Meme"
+      class="github-gif">
+    <div class="github-text">GitHub</div>
+  </a>
+
+  <div class="education-title">EDUCATION</div>
+
+  <table class="education-table">
+    <tr>
+      <th>Level</th>
+      <th>Years</th>
+      <th>Institution</th>
+    </tr>
+
+    <tr>
+      <td>Primary School</td>
+      <td>2010 – 2018</td>
+      <td>LFS</td>
+    </tr>
+
+    <tr>
+      <td>Secondary & High School</td>
+      <td>2018 – 2023</td>
+      <td>QMS</td>
+    </tr>
+
+    <tr>
+      <td>Sr. Secondary School</td>
+      <td>2023 – 2025</td>
+      <td>GBMS</td>
+    </tr>
+
+    <tr>
+      <td>University</td>
+      <td>2025 – 2029</td>
+      <td>
+        <a href="https://isu.ac.in/" target="_blank" class="edu-link">
+          ITM SkillTech University
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <a href="https://supermario-game.com/" target="_blank" class="mario-link">
+    <img src="https://media.tenor.com/NA1o-ptpmfoAAAAj/mario-super-mario-world.gif" alt="Mario Surprise"
+      class="mario-gif">
+    <div class="mario-text">TAP HERE FOR A SURPRISE</div>
+  </a>
+
+</body>
+
+</html>
