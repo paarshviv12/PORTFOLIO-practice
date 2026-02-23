@@ -1,9 +1,11 @@
 # Personal Portfolio Website 👨‍💻
 
-A comprehensive, aesthetically pleasing personal portfolio website showcasing creative work, deep technical skills, and extensive professional experience in a sleek modern format.
+A comprehensive, aesthetically pleasing personal portfolio website built for **Paarshvi Vijoy**, an ITM SkillTech University student (2025-2029).
+
+The site serves to showcase Paarshvi's deep interest and skills across VFX, animation, design, and engineering fields. Alongside an educational timeline, the website uniquely and playfully incorporates a Super Mario surprise link and a custom LinkedIn showcase banner.
 
 ## 🌟 Features
-- **Dynamic Sections:** Categorized distinct areas for 'About', 'Projects', and 'Contact'.
+- **Dynamic Sections:** Categorized distinct areas for 'About', 'Education', and 'Contact'.
 - **Professional Design:** Sleek typography, subtle micro-interactions, responsive sizing, and an overall premium look.
 - **Universal Adaptability:** Fully optimized structural design functioning elegantly on widescreen desktops and mobile devices alike.
 
