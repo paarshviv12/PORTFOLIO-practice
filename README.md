@@ -1,5 +1,10 @@
 # Personal Portfolio Website 👨‍💻
 
+<div align="center">
+  <img src="https://media.tenor.com/v2es7QGjFfoAAAAi/raul-senes-gamer.gif" height="200" />
+  <img src="https://media.tenor.com/K1ps3qaF1psAAAAi/kirby-nintendo.gif" height="200" />
+</div>
+
 A comprehensive, aesthetically pleasing personal portfolio website built for **Paarshvi Vijoy**, an ITM SkillTech University student (2025-2029).
 
 The site serves to showcase Paarshvi's deep interest and skills across VFX, animation, design, and engineering fields. Alongside an educational timeline, the website uniquely and playfully incorporates a Super Mario surprise link and a custom LinkedIn showcase banner.
